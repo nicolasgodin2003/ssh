@@ -1,7 +1,7 @@
 class ssh::service (
  String $service_name = $::ssh::service_name,
 ) {
-  service { 'sshd':
+  service { 'sshd-service':
     ensure     => 'running',
     name       =>  $service_name,
     enable     => true,
